@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
+	grid-gap: 15px;
 }
 a {
     text-decoration: none;
@@ -40,7 +41,7 @@ a {
 #body {
     grid-row: 2/3;
     grid-column: 1/4;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -55,26 +56,82 @@ h1 {
     display: inline-block;
 	padding: 15px 28px 12px;
 }
-#mustaches {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-right: 180px;
-    margin-left: 180px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+h3 {
+	color: #252525;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
 }
-#mustaches > a > img {
-    border: 2px solid #1a1a1a;
-    opacity: 0.8;
-    margin-bottom: 20px;
+.more {
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding: 8px 28px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
-#mustaches > a > img:hover {
-    opacity: 1;
-    transition: 0.5s ease-in-out;
+.more:hover {
+	color: #252525;
+	background: #fff;
+	border: 2px solid #252525;
 }
-
-
+img {
+	border: 0;
+	display: block;
+	margin: 0;
+	padding: 0;
+	opacity: 0.8;
+	transition: 0.5s ease-in-out;
+}
+img:hover {
+	opacity: 1;
+}
+#body > div {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+#blog1 {
+	grid-row: 1/2;
+}
+#blog2 {
+	grid-row: 2/3;
+}
+#blog3 {
+	grid-row: 3/4;
+}
+.figure {
+	border-right: 2px solid #1a1a1a;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 376px;
+}
+#body > div > div > div {
+	float: left;
+	margin: 0;
+	padding: 63px 0;
+	width: 500px;
+}
+#body > div > div {
+	border: 2px solid #1a1a1a;
+	width: 900px;
+	margin: 0 auto;
+}
+#body > div > div > div > p > a {
+	color: #252525;
+	text-decoration: underline;
+}
+#body > div > div > div > p > a:hover {
+	color: #898989;
+}
 #footer {
     grid-row: 3/4;
     grid-column: 1/4;
@@ -82,6 +139,8 @@ h1 {
 	margin: 0;
     padding: 36px 0 42px;
 }
+
+
 #footer div {
 	margin: 0 auto;
 	overflow: hidden;
