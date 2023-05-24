@@ -40,7 +40,7 @@ a {
 #body {
     grid-row: 2/3;
     grid-column: 1/4;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -50,27 +50,43 @@ h1 {
 	font-family: 'Poller One', cursive;
 	font-size: 35px;
 	font-weight: normal;
-	margin: 0;
+	margin: 40px;
 	text-transform: uppercase;
     display: inline-block;
 	padding: 15px 28px 12px;
 }
-#photographer {
-    border: 2px solid #1a1a1a;
-	width: 100%;
+img {
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+h4 {
+    background: #252525;
+	color: #fff;
+	display: inline-block;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0 0 30px;
+	padding: 8px 27px 10px;
+}
+.article {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
 }
 p {
-	color: #252525;
+    text-align: center;
+    color: #252525;
 	line-height: 24px;
-	margin: 0;
 	padding: 0;
+    margin: 0 0 30px;
 }
-.article > p > a {
-	color: #252525;
+p > a {
+    color: #252525;
 	text-decoration: underline;
 }
-.article > p > a:hover {
-	color: #898989;
+p > a:hover {
+    color: #898989;
 }
 
 #footer {
@@ -80,8 +96,6 @@ p {
 	margin: 0;
     padding: 36px 0 42px;
 }
-
-
 #footer div {
 	margin: 0 auto;
 	overflow: hidden;
