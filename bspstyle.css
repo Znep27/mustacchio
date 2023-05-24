@@ -1,0 +1,158 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+a {
+    text-decoration: none;
+}
+#header {
+    grid-row: 1/2;
+    grid-column: 2/3;
+	
+}
+#header a.logo img {
+	border: 0;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+#navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+.siteNav {
+    justify-content: start;
+    margin: 0 auto;
+    text-align: center;
+    width: 50px;
+}
+.siteNav > a {
+    color: #252525;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+#selected > a , .siteNav > a:hover {
+    color: #0ba39c;
+}
+#body {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    background-color: #252525;
+    color: #fff;
+	font-family: 'Poller One', cursive;
+	font-size: 35px;
+	font-weight: normal;
+	margin: 0;
+	text-transform: uppercase;
+    display: inline-block;
+	padding: 15px 28px 12px;
+}
+img {
+    border: 2px solid black;
+    margin: 20px;
+}
+h2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0 0 30px;
+}
+.article {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+p {
+    text-align: center;
+    color: #252525;
+	line-height: 24px;
+	padding: 0;
+    margin: 0 0 30px;
+}
+p > a {
+    color: #252525;
+	text-decoration: underline;
+}
+p > a:hover {
+    color: #898989;
+}
+#footer {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background: #252525;
+	margin: 0;
+    padding: 36px 0 42px;
+}
+
+
+#footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	width: 960px;
+}
+#footer > div > p {
+	font-size: 14px;
+    color: #fff;
+	float: left;
+	line-height: 44px;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+#footer div ul {
+	display: block;
+	float: right;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 256px;
+}
+#footer div ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	width: 44px;
+}
+#footer div ul li a {
+	background: url(https://freewebsitetemplates.com/preview/mustacheenthusiast//images/icons.jpg) no-repeat 0 0;
+	display: block;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+	width: 44px;
+}
+#footer div ul li #twitter {
+	background-position: 0 0;
+}
+#footer div ul li #twitter:hover {
+	background-position: -44px 0;
+}
+#footer div ul li #facebook {
+	background-position: 0 -44px;
+}
+#footer div ul li #facebook:hover {
+	background-position: -44px -44px;
+}
+#footer div ul li #googleplus {
+	background-position: 0 -88px;
+}
+#footer div ul li #googleplus:hover {
+	background-position: -44px -88px;
+}
+#footer div ul li #pinterest {
+	background-position: 0 -132px;
+}
+#footer div ul li #pinterest:hover {
+	background-position: -44px -132px;
+}
