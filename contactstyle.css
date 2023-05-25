@@ -1,8 +1,7 @@
 body {
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 50px;
+    grid-template-rows: 200px 5fr .25fr .25fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 a {
     text-decoration: none;
@@ -10,7 +9,6 @@ a {
 #header {
     grid-row: 1/2;
     grid-column: 2/3;
-	
 }
 #header a.logo img {
 	border: 0;
@@ -26,14 +24,13 @@ a {
     justify-content: start;
     margin: 0 auto;
     text-align: center;
-    width: 50px;
+    width: 75px;
 }
 .siteNav > a {
     color: #252525;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	text-transform: uppercase;
 }
 #selected > a , .siteNav > a:hover {
     color: #0ba39c;
@@ -52,7 +49,6 @@ h1 {
 	font-size: 35px;
 	font-weight: normal;
 	margin: 0;
-	text-transform: uppercase;
     display: inline-block;
 	padding: 15px 28px 12px;
 }
@@ -70,7 +66,6 @@ input, textarea {
 	margin: 0 0 37px;
 	padding: 20px 10px;
 	text-align: center;
-	text-transform: uppercase;
 	width: 596px;
 }
 textarea {
@@ -100,13 +95,11 @@ textarea {
 	margin: 0;
     padding: 36px 0 42px;
 }
-
-
 #footer div {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	width: 960px;
+	width: 75%;
 }
 #footer > div > p {
 	font-size: 14px;
@@ -164,4 +157,12 @@ textarea {
 }
 #footer div ul li #pinterest:hover {
 	background-position: -44px -132px;
+}
+@media (max-width: 768px) {
+	form, input, textarea {
+		width: 90%
+	}
+	#footer div ul {
+		float: left;
+	}
 }

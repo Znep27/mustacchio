@@ -1,7 +1,7 @@
 body {
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 5fr .25fr .25fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 a {
     text-decoration: none;
@@ -9,7 +9,6 @@ a {
 #header {
     grid-row: 1/2;
     grid-column: 2/3;
-	
 }
 #header a.logo img {
 	border: 0;
@@ -25,14 +24,13 @@ a {
     justify-content: start;
     margin: 0 auto;
     text-align: center;
-    width: 50px;
+    width: 75px;
 }
 .siteNav > a {
     color: #252525;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	text-transform: uppercase;
 }
 #selected > a , .siteNav > a:hover {
     color: #0ba39c;
@@ -50,8 +48,7 @@ h1 {
 	font-family: 'Poller One', cursive;
 	font-size: 35px;
 	font-weight: normal;
-	margin: 0;
-	text-transform: uppercase;
+	margin-top: 15px;
     display: inline-block;
 	padding: 15px 28px 12px;
 }
@@ -61,7 +58,7 @@ h1 {
     justify-content: space-around;
     margin-right: 180px;
     margin-left: 180px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 #mustaches > a > img {
@@ -73,8 +70,6 @@ h1 {
     opacity: 1;
     transition: 0.5s ease-in-out;
 }
-
-
 #footer {
     grid-row: 3/4;
     grid-column: 1/4;
@@ -86,7 +81,7 @@ h1 {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	width: 960px;
+	width: 75%;
 }
 #footer > div > p {
 	font-size: 14px;
@@ -144,4 +139,9 @@ h1 {
 }
 #footer div ul li #pinterest:hover {
 	background-position: -44px -132px;
+}
+@media (max-width: 768px) {
+	#footer div ul {
+		float: left;
+	}
 }
